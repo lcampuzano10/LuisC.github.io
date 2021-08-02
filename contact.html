@@ -47,19 +47,27 @@
       <div class="boxes">
         <div>
           <span class="text-secondarys">Email:</span>
-          <span class="smText">campuzano.luis10@gmail.com</span>
+          <span class="smText">luis14school14@gmail.com</span>
         </div>
         <div>
           <span class="text-secondarys">Location:</span>
-          Tampa FL 33617
+          Tampa FL 33614
         </div>
       </div>
     </main>
 
     <footer id="main-footer">
-      Copyright &copy; 2020
+      Copyright &copy; 2020 <span id="dateCurrent"></span>
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+      var dateToday = new Date().getFullYear();
+      if(dateToday > 2020)
+      {
+        document.getElementById("dateCurrent").innerHTML = "- " + dateToday;
+        //console.log(dateToday);
+      }      
+    </script>
   </body>
 </html>
